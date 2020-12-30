@@ -1,5 +1,9 @@
 # AWS Certified Machine Learning Specialty
 
+## Prep Guides:
+- **Prepare for Your AWS Certification Exam** https://aws.amazon.com/certification/certification-prep/
+- **Exam Readiness: AWS Certified Machine Learning - Specialty** 4hr video series https://www.aws.training/Details/eLearning?id=42183
+
 ## Prep Courses:
 - **AWS Machine Learning** https://aws.amazon.com/training/learn-about/machine-learning/
   - Elements of Data Science and the Exam Readiness course (2 days)

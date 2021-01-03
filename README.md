@@ -44,7 +44,6 @@ Other tests to gauge understanding:
 2. For questions that have answers involving AWS specific services compared to custom implementations, the correct answer is almost always something involving AWS services of some kind. It may not give you the answer but it will help eliminate one or two choices
 
 3. prep time takes about 4 to 6 hours a day effectively for about 4 weeks
-- plan ahead
 
 
 ## Student Prep Articles:

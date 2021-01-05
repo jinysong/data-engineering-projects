@@ -12,6 +12,7 @@
 - **WhizLab: AWS Certified Machine Learning — Speciality video course** ($29.95 USD 9hrs) https://www.whizlabs.com/aws-certified-machine-learning-specialty/
 - **A Cloud Guru: AWS Certified Machine Learning - Specialty 2020** https://acloudguru.com/course/aws-certified-machine-learning-specialty-2020
 - https://courses.datacumulus.com/
+- **FreeCodeCampe: AWS Certified Cloud Practitioner Training 2020 - Full Course** https://www.youtube.com/watch?v=3hLmDS179YE
 
 ## Resources:
 - **AWS developer documentations** https://docs.aws.amazon.com/

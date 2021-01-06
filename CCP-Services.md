@@ -1,4 +1,7 @@
-Amazon Web Services Cloud Platform 
+# Amazon Web Services Cloud Platform 
+
+|Service    |Function       |
+|--------|------------|
 |AWS Management Console |			|
 |AWS Command Line Interface |			|
 |Software Development Kits |			|

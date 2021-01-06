@@ -59,11 +59,11 @@
 |Amazon EC |			|
 |Amazon EC Auto Scaling |			|
 |Amazon Elastic Container Registry |			|
-|Amazon Elastic Container Service |			|
+|Amazon Elastic Container Service (ECS)|Managed Kubernetes control plane nodes for managing containers			|
 |Amazon Elastic Kubernetes Service |			|
 |Amazon Lightsail |			|
-|AWS Batch |			|
-|AWS Elastic Beanstalk |			|
+|AWS Batch |package and submit batch job			|
+|AWS Elastic Beanstalk |fastest & simplest way to get web apps running			|
 |AWS Fargate |			|
 |AWS Lambda |			|
 |AWS Serverless Application Repository |			|

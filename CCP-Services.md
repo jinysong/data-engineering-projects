@@ -65,7 +65,7 @@
 |AWS Batch |package and submit batch job			|
 |AWS Elastic Beanstalk |fastest & simplest way to get web apps running			|
 |AWS Fargate |			|
-|AWS Lambda |			|
+|AWS Lambda |run code; charged on # of requests(event notification or invoke call), time to execute, memory allocated		|
 |AWS Serverless Application Repository |			|
 |AWS Outposts |			|
 |VMware Cloud on AWS |			|

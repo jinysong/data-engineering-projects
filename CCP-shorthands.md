@@ -1,6 +1,5 @@
 
 Shorthand|  Description
-.------|.------
 AZ		|Availability zone
 IAM 		|Identity and Access Management
 MFA		|Multi-factor Authentication

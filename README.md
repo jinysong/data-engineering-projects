@@ -50,7 +50,6 @@ Other tests to gauge understanding:
 - Raghav Dave https://towardsdatascience.com/how-i-prepared-for-the-aws-machine-learning-speciality-certification-10834924d192
 - Patrick Brett https://www.youtube.com/watch?v=vrsHO-3pkNw
 
-# AWS Certified Cloud Practitioner ( CLF-C01 )
+# AWS Certified Cloud Practitioner (CLF-C01)
 - Youtube: FreeCodeCamp: **AWS Certified Cloud Practitioner Training 2020 - Full Course** https://www.youtube.com/watch?v=3hLmDS179YE
-
 - Udemy: **AWS Certified Cloud Practitioner Practice Exams** by Job Bonso https://www.udemy.com/course/aws-certified-cloud-practitioner-practice-exams-amazon/

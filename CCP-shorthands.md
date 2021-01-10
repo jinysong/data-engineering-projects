@@ -65,4 +65,4 @@
 |SSO		|single sign-on|
 |EBS		|elastic block storage|
 |EFS		|elastic file storage|
-|SES 		|simple email service
+|SES 		|simple email service|

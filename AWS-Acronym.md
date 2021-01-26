@@ -1,4 +1,4 @@
-|Shorthand| Description|
+|Acronym| Description|
 |---------|------------|
 |AZ		|Availability zone|
 |IAM 		|Identity and Access Management|
@@ -12,7 +12,7 @@
 |ALB		|Application Load Balancer (has it’s own DNS name, and target group)|
 |NLB		|Network Load Balancer |
 |S3		|Simple Storage Service (global, no region selection; buckets are region specific; bucket names are unique)|
-|CloudFront		|used as a CDN (Content delivery network); take static content and copy to multiple edge locations; has its own domain like (like ELB)|
+|Cloud Front    |used as a CDN (Content delivery network); take static content and copy to multiple edge locations; has its own domain like (like ELB)|
 |RDS		|relational database service (750 hrs on free tier)|
 |lambda		|can add trigger from other services|
 |SDK		|software development kit|

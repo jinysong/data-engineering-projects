@@ -35,5 +35,3 @@ Issued: Jan 17, 2021
 - Neural Network: Backpropagation (Week 5) is the hardest part of the course. NNs also the most useful algorithm for machine learning, especially for projects. I recommend doing these two chapters first (week 4 and 5) and make good notes so you can review them quickly throughout the course for better understanding and retention. Other than the activation part that uses the sigmoid/logistic function which builds on past material, Neural Networks can be studied as a standalone portion.
 
 ## Resources
-- MatLab CheetSheet by Steven Thornton
-[https://github.com/steventhornton/Matlab-Cheatsheet/blob/master/MatlabCheatsheet.pdf]

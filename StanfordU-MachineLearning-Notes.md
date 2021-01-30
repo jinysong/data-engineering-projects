@@ -1,8 +1,7 @@
 # Machine Learning
-https://www.coursera.org/learn/machine-learning  
-Offered by: Stanford University on Coursera  
-Instructor: Andrew Ng  
-Time to complete: Approx. 60 hours  
+https://www.coursera.org/learn/machine-learning 
+Stanford University on Coursera  
+Andrew Ng  
 
 ## Certificate
 Issued: Jan 17, 2021  

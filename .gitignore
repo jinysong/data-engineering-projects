@@ -1,6 +1,6 @@
-.DS_Store
-.csv
-.pkl
+*.DS_Store
+*.csv
+*.pkl
 **.ipynb_checkpoints/
 
 

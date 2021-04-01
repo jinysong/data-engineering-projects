@@ -26,6 +26,100 @@ The test set is appended to the matrix, with 'date_block_num' set to 34.
 
 After setting up the matrix with date block, shop ID, item ID, and item count per month, the rest of the data is merged on those features.
 
+##  Feature Engineering using Target Lags
+Given a column, such as item_cnt_month, I calculatde the shifted date_block_num and merge it back to the dataframe as an extra column, such as item_cnt_month_lag_1.
+
+For example, if we want to add a new column with item_cnt_month_lag_6:
+
+1. make a temporary df with the columns date_block_num, shop_id, item_id, and item_cnt_month
+2. make a shifted df from the temporary df where the item_cnt_month is changed to item_cont_month_6
+3. the date_block_num becomes date_block_num + 6
+4. return a new dataframe where the shifted df is joined with the temporary df on date_block_num, shop_id, and item_id
+Therefore, we end up with an item_cnt (for the same shop_id and item_id) where it lags behind an X number of date_block_num.
+
+Using the target lag method created earlier, I calculated the mean item count per month and lag the values by 1, 2, 3, 6, and 12 months. 
+Then I repeated the process for:
+- average item count by item ID, 
+- average item count by shop ID,
+- average item count by item category,
+- average item count by shop ID and item_category_id,
+- average item count by shop ID and type_code,
+- average item count by shop ID subtype,
+- average item count by city code,
+- average item count by item_id and city_cody,
+- average item count by type_code,
+- and average item count by subtype_code
+
+I also calculated other trend features in addition to those related to average item count:
+- average item price by item ID
+- average item price by date block and item ID
+- change in item price for 1, 2, 3, 4, 5, 6 months
+- total revenue for each shop ID, by date block
+- average revenue for each shop ID, by date block
+- and revenue for 1, 2, 3, 4, 5, 6 months
+
+## The Resulting Features
+
+
+no.  |Column                                |Dtype  
+--- |------                                |-----  
+ 0  |date_block_num                        |int8   
+ 1  |shop_id                               |int8   
+ 2  |item_id                               |int16  
+ 3  |item_cnt_month                        |float16
+ 4  |city_code                             |int8   
+ 5  |item_category_id                      |int8   
+ 6  |type_code                             |int8   
+ 7  |subtype_code                          |int8   
+ 8  |item_cnt_month_lag_1                  |float16
+ 9  |item_cnt_month_lag_2                  |float16
+ 10 |item_cnt_month_lag_3                  |float16
+ 11 |item_cnt_month_lag_6                  |float16
+ 12 |item_cnt_month_lag_12                 |float16
+ 13 |date_avg_item_cnt_lag_1               |float16
+ 14 |date_item_avg_item_cnt_lag_1          |float16
+ 15 |date_item_avg_item_cnt_lag_2          |float16
+ 16 |date_item_avg_item_cnt_lag_3          |float16
+ 17 |date_item_avg_item_cnt_lag_6          |float16
+ 18 |date_item_avg_item_cnt_lag_12         |float16
+ 19 |date_shop_avg_item_cnt_lag_1          |float16
+ 20 |date_shop_avg_item_cnt_lag_2          |float16
+ 21 |date_shop_avg_item_cnt_lag_3          |float16
+ 22 |date_shop_avg_item_cnt_lag_6          |float16
+ 23 |date_shop_avg_item_cnt_lag_12         |float16
+ 24 |date_cat_avg_item_cnt_lag_1           |float16
+ 25 |date_shop_cat_avg_item_cnt_lag_1      |float16
+ 26 |date_shop_type_avg_item_cnt_lag_1     |float16
+ 27 |date_shop_subtype_avg_item_cnt_lag_1  |float16
+ 28 |date_city_avg_item_cnt_lag_1          |float16
+ 29 |date_item_city_avg_item_cnt_lag_1     |float16
+ 30 |date_type_avg_item_cnt_lag_1          |float16
+ 31 |date_subtype_avg_item_cnt_lag_1       |float16
+ 32 |delta_price_lag                       |float16
+ 33 |delta_revenue_lag_1                   |float16
+ 34 |month                                 |int8   
+ 35 |days                                  |int8   
+ 36 |item_shop_last_sale                   |int8
+
+## Mange Memory
+
+The final dataframe is pickled and all other dataframes are deleted with the garbage collector.
+
+# Modeling
+
+## Train Test Split
+The train test split is done based on the time period. I used the 13th to 32nd months for training set, and the 33rd month for validation set. I used the 34th month for testing set.
+
+## Model
+
+The model I used for this project is the XGBoost regressor model. It is fit with the RMSE evaluation metric. The final prediction is clipped.
+
+## Feature Importance
+
+Using the XGBoost package, a graph of feature importance measured by the f score is returned showing how many times a variable was split on. In order of importance, the top three features are:
+1. date of the average item count lagged by one month
+2. item category ID
+3. change in price lagged by one month
 
 ## Resource Conservation
 

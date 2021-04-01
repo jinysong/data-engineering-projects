@@ -1,5 +1,15 @@
-# Face Mask Rating Prediction
+# Amazon Face Mask Rating Prediction with Neural Network Model
 
-Scraped Amazon reviews and ratings on face masks products with selenium web automation. Data cleaning and EDA with python, numpy, and pandas. Data visualization seaborn and matplotlib. Process and encode texts with NTLK. Model, train, and test neural network with scikit-learn, keras, and tensorflow. App deployment with streamlit on Heroku.
+Online retailers saw an unprecedented demand for face masks in 2020 with the rise of COVID-19. Analyzing the reviews and ratings of products using sentiment analysis with Natural Language Processing (NTLK) can help businesses understand consumer behavior and lead to better product development. 
 
-[Demo](http://www.heroku/app/mask-prediction) | [Summary](http://jinysong.github.io/data-engineering-projects/mask-rating-prediction/README.md) | [Notebook]()
+In this machine learning project, I created a Neural Network (NN) model that will predict the star rating on a scale of 1 to 5, based on a written review from real customers on Amazon. 
+
+This project demonstrates a complete machine learning workflow: 
+- data scraping using Selenium web automation
+- data cleaning and EDA with python, numpy, and pandas
+- data visualization seaborn and matplotlib
+- text data processing and encoding with NTLK
+- neural network modeling, training, and testing with scikit-learn, keras, and tensorflow
+- model evaluation using various metrics
+
+[Summary](https://github.com/JinySong/data-engineering-projects/blob/main/Face%20Mask%20Rating%20Prediction/README.md) | [Notebook](https://github.com/JinySong/data-engineering-projects/tree/main/Face%20Mask%20Rating%20Prediction)

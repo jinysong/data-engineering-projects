@@ -14,3 +14,22 @@ This project demonstrates a complete machine learning workflow:
 - model evaluation using various metrics
 
 [Summary](https://github.com/JinySong/data-engineering-projects/blob/main/Face%20Mask%20Rating%20Prediction/README.md) | [Notebooks](https://github.com/JinySong/data-engineering-projects/tree/main/Face%20Mask%20Rating%20Prediction)
+
+
+![banner](Sales%20Prediction%20with%20XGBoost/img/banner.jpg)
+# Sale Volume Prediction with XGBoost
+
+The goal of this project is to work with time-series data and use XGBoost to forecast sales volume for each store. A unique aspect of the dataset is that that the list of stores and products changes every month and there are new items in the testing dataset that are not present in the training dataset.
+
+Project workflow summary:
+- process outliers
+- impute missing data
+- discover data duplication
+- encode features
+- time-series analysis
+- feature engineering using target lags
+- generate trend features
+- modeling with XGBoost
+- model evaluation
+
+[Summary](https://github.com/JinySong/data-engineering-projects/blob/main/Sales%20Prediction%20with%20XGBoost/README.md) | [Notebooks](https://github.com/JinySong/data-engineering-projects/blob/main/Sales%20Prediction%20with%20XGBoost/Sales%20Prediction%20with%20XGBoost.ipynb)

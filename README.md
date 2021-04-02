@@ -32,4 +32,4 @@ Project workflow summary:
 - modeling with XGBoost
 - model evaluation
 
-[Summary](https://github.com/JinySong/data-engineering-projects/blob/main/Sales%20Prediction%20with%20XGBoost/README.md) | [Notebooks](https://github.com/JinySong/data-engineering-projects/blob/main/Sales%20Prediction%20with%20XGBoost/Sales%20Prediction%20with%20XGBoost.ipynb)
+[Summary](https://github.com/JinySong/data-engineering-projects/blob/main/Sales%20Prediction%20with%20XGBoost/README.md) | [Notebook](https://github.com/JinySong/data-engineering-projects/blob/main/Sales%20Prediction%20with%20XGBoost/Sales%20Prediction%20with%20XGBoost.ipynb)

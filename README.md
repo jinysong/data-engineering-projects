@@ -33,3 +33,29 @@ Project workflow summary:
 - model evaluation
 
 [Summary](https://github.com/JinySong/data-engineering-projects/blob/main/Sales%20Prediction%20with%20XGBoost/README.md) | [Notebook](https://github.com/JinySong/data-engineering-projects/blob/main/Sales%20Prediction%20with%20XGBoost/Sales%20Prediction%20with%20XGBoost.ipynb)
+
+![banner house price](House%20Price%20Prediction%20with%20Stacked%20Regression/img/banner.png)
+
+# House Price Prediction with Stacked Regression 
+
+The goal of this notebook is to predict house prices using stacked regression models.
+
+Project workflow summary:
+- process outliers
+- process missing data, impute values from other features
+- perform logarithmic transformation on skewed data
+- shuffle and splitting the data for training, validation, and testing
+- produce base models using lasso regression, elastic net regression, kernel ridge regression, gradient boosting regression, XGBoost, and LightGMB
+- stacking models using the meta-model method where out-of-fold predictions made on the holdout dataset are used as training for a meta-model. 
+- using root mean squared log error to evaluate results, which is more robust to outliers compared to traditional RMSE.
+
+[Summary](House%20Price%20Prediction%20with%20Stacked%20Regression/README.md) |
+[Notebook](House%20Price%20Prediction%20with%20Stacked%20Regression/House%20Price%20Prediction%20with%20Stacked%20Regression.ipynb)
+
+![cc banner](Credit%20Card%20Fraud%20Detection%20with%20CNN/img/cc_banner.jpg)
+
+# Credit Card Fraud Detection with CNN
+
+
+[Summary](Credit%20Card%20Fraud%20Detection%20with%20CNN/README.md) | 
+[Notebook](Credit%20Card%20Fraud%20Detection%20with%20CNN/Credit%20Card%20Fraud%20Detection%20with%20CNN.ipynb)

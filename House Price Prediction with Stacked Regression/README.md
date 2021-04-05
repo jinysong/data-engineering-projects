@@ -1,7 +1,7 @@
 ![banner](img/banner.png)
 # House Price Prediction with Stacked Regression
 
-The goal of this notebook is to predict house prices using a stacked regression method.
+The goal of this notebook is to predict house prices using a stacked regression method. 
 
 ## Data Processing
 Like most ML projects, I started by doing some simple EDA on the training data. There were a few outliers when plotting sales price against living area and those outliers were removed without affecting the sample size. 
@@ -63,8 +63,19 @@ For each base model, caculate the rmsle score using the validation set. The scor
 
 ## Stacking Models using the Averaging Method
 
-We will define clones of the original models. We will use this clone to train and make predictions. The average of the predictions will be used.
-
-The result shows that a simple stacking model using the averaging method beats any individual models alone. 
+The stacking model is simply making clones of the original models and then taking the average of all the predictions. The result shows that a simple stacking model using the averaging method beats any individual models alone. 
 
 Averaged base models score (std): 0.1087 (0.0077)
+
+## Stacking Models using the Meta Model Method
+
+The meta-model trains on the out-of-fold predictions of the base models, which are the out-of-fold predictions made on the holdout dataset during the resampling procedure. There is one prediction for each example in the training dataset. Then the out-of-folds predictions are used as the inputs, and the correct responses (target variable) are used as the outputs to train a higher level learner called meta-model.
+
+For the prediction part, average the predictions of all base models on the test data and used them as meta-features on which, the final prediction is done with the meta-model.
+
+![oof](img/oof.jpg)
+
+Stacking Averaged models score: 0.1081 (0.0073)
+RMSE on Entire Data: 0.0754
+
+

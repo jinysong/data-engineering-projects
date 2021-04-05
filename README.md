@@ -56,6 +56,17 @@ Project workflow summary:
 
 # Credit Card Fraud Detection with CNN
 
+It is important that credit card companies are able to recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase. In this notebook, we will compare the different ways we can handle an imbalanced dataset in machine learning.
 
-[Summary](Credit%20Card%20Fraud%20Detection%20with%20CNN/README.md) | 
+Most machine learning algorithms work best when the number of samples in each class is roughly equal and balance. However, with anomaly detection problems, the positive class will always be a small portion of the overall data. For example, in this credit card dataset, only 0.17% of transactions being classified as fraudulent.
+
+The goal of this notebook is to explore uneven data distributions and use a CNN model to detect anomalies.
+
+Project workflow summary:
+- sample from positive class to balance the data
+- split data into train and test sets
+- use StandardScalar() to normalize features
+- create model using convolutional neural network deep learning algorithm
+- evaluate model accuracy
+
 [Notebook](Credit%20Card%20Fraud%20Detection%20with%20CNN/Credit%20Card%20Fraud%20Detection%20with%20CNN.ipynb)
